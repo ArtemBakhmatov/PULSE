@@ -287,6 +287,103 @@
   margin-bottom: 20px;
 }
 
+.carousel {
+  padding: 81px 0;
+}
+
+.carousel .container {
+  position: relative;
+}
+
+.carousel__item {
+  display: block;
+  margin: 0 auto;
+  width: 750px;
+  height: 520px;
+}
+
+.carousel__item img {
+  width: 100%;
+}
+
+.carousel .prew {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  font-size: 50px;
+  color: #c70101;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.carousel .prew span {
+  display: block;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.carousel .prew span:active {
+  color: #0f0202;
+}
+
+.carousel .prew:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #C0C0C0;
+}
+
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  font-size: 50px;
+  color: #c70101;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.carousel .next span {
+  display: block;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.carousel .next span:active {
+  color: #0f0202;
+}
+
+.carousel .next:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #C0C0C0;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
