@@ -26,6 +26,13 @@
             font-size: 18px;
         }
     }
+    .carousel {
+        padding: 60px 0;
+        &__item {
+            width: 510px;
+            height: 360px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -118,6 +125,12 @@
             font-size: 24px;
         }
     }
+    .carousel {
+        &__item {
+            width: 400px;
+            height: 300px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -202,6 +215,12 @@
         }
         .feed-form {
             width: 100%;
+        }
+    }
+    .carousel {
+        &__item {
+            width: 295px;
+            height: 205px;
         }
     }
 }

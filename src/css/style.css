@@ -412,6 +412,13 @@
     margin-top: 70px;
     font-size: 18px;
   }
+  .carousel {
+    padding: 60px 0;
+  }
+  .carousel__item {
+    width: 510px;
+    height: 360px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -500,6 +507,10 @@
   .consultation .title {
     font-size: 24px;
   }
+  .carousel__item {
+    width: 400px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -587,6 +598,10 @@
   }
   .consultation .feed-form {
     width: 100%;
+  }
+  .carousel__item {
+    width: 295px;
+    height: 205px;
   }
 }
 /*# sourceMappingURL=style.css.map */
