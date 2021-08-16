@@ -466,13 +466,27 @@
 
 .catalog__content {
   margin-top: 60px;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog-item {
   width: 300px;
   min-height: 440px;
   border: solid 2px #e8e8e8;
+  margin-bottom: 20px;
   padding: 20px 20px 26px 20px;
+  overflow: hidden;
 }
 
 .catalog-item__img {
@@ -548,6 +562,86 @@
   font-weight: bold;
   line-height: 20px;
   color: #050505;
+}
+
+.catalog-item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(200% + 40px);
+}
+
+.catalog-item__content {
+  width: 50%;
+  margin-right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.catalog-item__content_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  margin-right: 20px;
+}
+
+.catalog-item__list {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-left: 19px;
+  padding-right: 20px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  list-style-type: none;
+}
+
+.catalog-item__list li {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.catalog-item__list li:before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #c70101;
+  left: -18px;
+  top: 5px;
+}
+
+.catalog-item__list_active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-left: 0;
+}
+
+.catalog-item__back {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(calc(-50% - 10px));
+          transform: translateX(calc(-50% - 10px));
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #c70101;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.catalog-item__back:hover {
+  color: #c70101;
 }
 
 @media (max-width: 1200px) {
