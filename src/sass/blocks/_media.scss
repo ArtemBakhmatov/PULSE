@@ -2,6 +2,11 @@
     .container {
         max-width: 960px
     }
+    .footer {
+        &__info {
+            width: 415px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -299,6 +304,23 @@
         &__img {
             width: 145px;
             height: 145px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 290px;
+            height: 165px;
+            padding-top: 10px;
+        }
+        &__addr {
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 25px;
+        }
+        &__phone {
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 30px;
         }
     }
 }
