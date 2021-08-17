@@ -158,6 +158,25 @@
             justify-content: space-around;
         }
     }
+    .feedback {
+        padding-bottom: 50px;
+        .title {
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 50px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__band {
+            margin: 40px 0;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -268,6 +287,18 @@
             &_mini {
                 width: 118px;
             }
+        }
+    }
+    .feedback {
+        padding-bottom: 40px;
+        .title {
+            font-size: 23px;
+            line-height: 23px;
+            margin-bottom: 40px;
+        }
+        &__img {
+            width: 145px;
+            height: 145px;
         }
     }
 }
