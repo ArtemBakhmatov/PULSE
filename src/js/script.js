@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
-
 // SLIDER
     let slideIndex = 1,
         slides = document.querySelectorAll('.carousel__item'),
@@ -34,45 +33,11 @@ window.addEventListener('DOMContentLoaded', function() {
     next.addEventListener('click', function() {
         plusSlides(1);
     });
-
-    // TABS
-
-    // let tab = document.querySelectorAll('.catalog__tab'),
-    //     tabs = document.querySelector('.catalog__tabs'),
-    //     tabContent = document.querySelectorAll('.catalog__content');
-
-    // function hideTabContent(a) {
-    //     for (let i = a; i < tabContent.length; i++) {
-    //         tabContent[i].classList.remove('catalog__content_active');
-    //         tabContent[i].classList.add('catalog__content');
-    //     }
-    // }  
-
-    // hideTabContent(1);  
-    
-    // function showTabContent(b) {
-    //     if (tabContent[b].classList.contains('catalog__content')) {
-    //         tabContent[b].classList.remove('catalog__content');
-    //         tabContent[b].classList.add('catalog__content_active');
-    //     }
-    // }
-
-    // tabs.addEventListener('click', function(event) {
-    //     let target = event.target;
-    //     if (target && target.classList.contains('catalog__tab')) {
-    //         for(let i = 0; i < tab.length; i++) {
-    //             if (target == tab[i]) {
-    //                 hideTabContent(0);
-    //                 showTabContent(i);
-    //                 break;
-    //             }
-    //         }
-    //     }
-
-    // });
 });
 
+// Jquery
 $(document).ready(function(){
+    // Tabs
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -91,6 +56,20 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
 });
 
 
