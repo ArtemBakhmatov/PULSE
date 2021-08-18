@@ -323,4 +323,29 @@
             margin-bottom: 30px;
         }
     }
+    .modal {
+        width: 240px;
+        padding: 20px 5px 20px 5px;
+        border-radius: 5px;
+        min-height: 375px;
+        &__close {
+            right: -30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .feed-form {
+            width: 230px;
+            .button_submit {
+                font-size: 14px;
+                line-height: 14px;
+                height: 45px;
+            }
+        }
+    }
 }

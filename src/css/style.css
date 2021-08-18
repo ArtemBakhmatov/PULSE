@@ -1187,5 +1187,30 @@
     line-height: 18px;
     margin-bottom: 30px;
   }
+  .modal {
+    width: 240px;
+    padding: 20px 5px 20px 5px;
+    border-radius: 5px;
+    min-height: 375px;
+  }
+  .modal__close {
+    right: -30px;
+  }
+  .modal__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .modal__descr {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .modal .feed-form {
+    width: 230px;
+  }
+  .modal .feed-form .button_submit {
+    font-size: 14px;
+    line-height: 14px;
+    height: 45px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
