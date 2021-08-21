@@ -11,6 +11,10 @@
         img {
             width: 100%;
         }
+        &_animated {
+            animation-name: fade;
+            animation-duration: 1s;
+        }
     }
     .prew {
         position: absolute;
