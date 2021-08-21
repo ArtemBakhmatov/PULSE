@@ -35,5 +35,9 @@
         line-height: 18px;
         text-decoration: none;
         color: white;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
     }
 }

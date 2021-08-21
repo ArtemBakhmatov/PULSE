@@ -18,6 +18,12 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        &_animated {
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-duration: var(--animate-duration);
+        }
     }
     &__img {
         display: block;
