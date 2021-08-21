@@ -714,17 +714,20 @@
   position: relative;
   width: 50%;
   margin-left: 20px;
-  margin-bottom: 0;
-  padding-left: 19px;
-  padding-right: 20px;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  list-style-type: none;
 }
 
-.catalog-item__list li {
+.catalog-item__list ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 19px;
+  padding-right: 20px;
+}
+
+.catalog-item__list ul li {
   position: relative;
   font-size: 14px;
   font-weight: 300;
@@ -733,7 +736,7 @@
   margin-bottom: 20px;
 }
 
-.catalog-item__list li:before {
+.catalog-item__list ul li:before {
   content: '';
   position: absolute;
   width: 5px;
@@ -932,6 +935,12 @@
 
 .footer__social-item span:hover {
   color: black;
+}
+
+.footer iframe {
+  width: 100%;
+  height: 630px;
+  border: 0;
 }
 
 .overlay {
