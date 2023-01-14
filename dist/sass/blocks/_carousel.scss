@@ -1,0 +1,71 @@
+.carousel {
+    padding: 81px 0;
+    .container {
+        position: relative;
+    }
+    &__item {
+        display: block;
+        margin: 0 auto;
+        width: 750px;
+        height: 520px;
+        img {
+            width: 100%;
+        }
+        &_animated {
+            animation-name: fade;
+            animation-duration: 1s;
+        }
+    }
+    .prew {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        font-size: 50px;
+        color: $main_color;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s all;
+        span {
+            display: block;
+            transition: 0.2s all;
+            &:active {
+                color: #0f0202;
+            }
+        }
+        &:hover {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #C0C0C0;
+        }
+    }
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        font-size: 50px;
+        color: $main_color;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s all;
+        span {
+            display: block;
+            transition: 0.2s all;
+            &:active {
+                color: #0f0202;
+            }
+        }
+        &:hover {
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #C0C0C0;
+        }
+    }
+}
